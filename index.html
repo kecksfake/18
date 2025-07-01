@@ -107,6 +107,8 @@
             text-shadow: 0 0 40px rgba(59, 130, 246, 0.8);
             margin: 0.5rem 0 1rem 0;
             animation: ageGlow 2s ease-in-out infinite alternate;
+            cursor: pointer;
+            user-select: none;
         }
         
         @keyframes ageGlow {
@@ -148,7 +150,7 @@
         
         .icon-container {
             text-align: center;
-            transition: transform 0.3s ease;
+            transition: transform 0.3s ease, filter 0.3s ease;
             cursor: pointer;
             flex: 0 0 auto;
         }
@@ -720,7 +722,7 @@
         <div class="age-highlight">18</div>
         
         <div class="funny-message">
-            <p><strong>🎉 WILLKOMMEN IM ERWACHSENENLEBEN! 🎉</strong></p>
+            <p><strong>🎉 WILLKOMMEN IM ERWACHSENENLEBEN!!!! 🎉</strong></p>
             <p>Jetzt warten die Steuern, aber dafür darfst du endlich alles! 😎</p>
         </div>
         
@@ -859,5 +861,6 @@
             }
         });
         
-        // Touch-Optimierung für Mobile
-        if ('ontouchstart' in window) {
+    </script>
+</body>
+</html>
